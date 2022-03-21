@@ -27,7 +27,7 @@ Currently there are 3 methods:
 
 `ton.send('ton_requestAccounts'): Promise<string[]>` - get user wallet address.
 
-`ton.send('ton_sendTransaction', {value: string, to: string, data: string})` - send TON coins.
+`ton.send('ton_sendTransaction', [{value: string, to: string, data: string}]): Promise<boolean>;` - send TON coins.
 
 Where `value` - nanotons to send,
 `to` - destination address,
